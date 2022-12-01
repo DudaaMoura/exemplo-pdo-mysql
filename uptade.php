@@ -20,17 +20,11 @@ else{
 
 }
 
+$_title = 'Editar Gênero';
+
 ?>
 
-<!DOCTYPE html>
-<html lang="PT-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Gênero</title>
-</head>
-<body>
+ <?php include('./includes/footer.php')?>
     <h1>Editar Gênero</h1>
     <form action="uptade.php" method="post">
         <input type="hidden" name="id" value="<?= $genero['id'] ?>"/>
@@ -39,5 +33,4 @@ else{
         <button type="submit">Salvar</button>
     </form>
     
-</body>
-</html>
+    <?php include('./includes/footer.php')?>
